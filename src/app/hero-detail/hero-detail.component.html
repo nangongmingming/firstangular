@@ -1,0 +1,24 @@
+
+<div *ngIf="hero">
+  <h2>{{hero.name}} details!</h2>
+  <div>
+    <label>id: </label>{{hero.id}}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+    <!-- []从模板来数据 （）从页面来数据 -->
+  </div>
+</div>
+
+<h2>{{hero}} 详情!</h2>
+<h3>{{hero.id}}</h3>
+<h3>{{hero.name}}</h3>
+
+<div>
+  <label>id: </label>{{hero.id}}</div>
+<div>
+  <label>name: </label>{{hero.name}}</div>
+<div>
+  <label>name: </label>
+  <input [(ngModel)]="hero.name" placeholder="name">
+</div>
